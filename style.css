@@ -4,7 +4,7 @@
 }
 .mid-subtitle {
     border-left: 2px solid black;
-    border-right: 2px solid black;
+    border-right: 2px solid black;;
     padding: 10px;
 }
 .main-section {
@@ -33,10 +33,12 @@
     margin-left: 45%;
 }
 .fotos {
+    margin: 20px;
     display: flex;
+    justify-content: space-between;
 }
 .fotos img{
-    object-fit: cover;
+    /* object-fit: cover; */
 }
 .glass-styles-main {
     margin: 30px;
@@ -61,6 +63,10 @@ a {
     font-size:20px ;
     font-family: Audiowide;
 }
+footer { 
+    margin-bottom: 30px;
+    font-family: Audiowide;
+}
 h2 {
     text-align: center;
     font-family: Audiowide;
@@ -76,4 +82,88 @@ h2 {
     background-color: rgb(88, 175, 233);
     padding: 10px;
     border-style: double;
+}
+.contact{
+    padding:10px;
+    background-color: rgb(88, 175, 233);
+    border-style: double;
+    
+}
+
+.contact h2{
+    width:100%;
+    text-align:center;
+    margin:0 auto;
+    font-size:30px;
+    font-weight:600;
+    font-family: Audiowide, sans-serif;
+}
+.contact-content{
+    margin-top:60px;
+    display:flex;
+    justify-content:space-evenly;
+}
+
+.contact-item{
+    display:flex;
+    align-items:center;
+    /* justify-content:center;  bunu burada vermemeliyiz iconlar arasında biçimsizlik yaratır */
+    flex-basis:33%;
+    margin-bottom:100px;
+    flex-direction:column;
+}
+
+.contact-item i{
+    font-size:25px;
+    margin-bottom:30px;
+}
+
+.contact-item p{
+    font-size:14px;
+    line-height: 33px;
+}
+
+/* FOOTER */
+.footer h2{
+    width:100%;
+    text-align:center;
+    margin:0 auto;
+    font-size:30px;
+    font-weight:600;
+    font-family: Audiowide, sans-serif;
+    padding:55px 0;
+}
+
+.footer h2::after{
+    content:"";
+    width: 30px;
+    height: 3px;
+    margin:0 auto;
+    display:block;
+    margin-top:10px;
+}
+
+.footer-copyright{
+    text-align:center;
+    flex-basis:55%;
+    line-height:2;
+    font-size:13px;
+    margin-bottom:25px;
+}
+
+.footer-content{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+}
+.footer-social i{
+    color:black;
+    margin-bottom: 50px;
+    font-size: 25px;
+    padding:0 40px;
+}
+
+.footer-social:first-child{
+    margin-left:35px;
 }
